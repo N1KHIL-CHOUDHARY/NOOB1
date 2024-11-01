@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOOB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header with Responsive Navbar -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <h1 class="text-2xl font-bold text-blue-700"><a href="index.html">Noob</a></h1>
+
+            <!-- Hamburger Menu Button -->
+            <button id="menuButton" class="text-gray-600 hover:text-blue-700 md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Navbar Links -->
+            <nav id="navLinks" class="hidden md:flex space-x-4">
+                <a class="text-gray-600 hover:text-blue-700" href="index.html">Home</a>
+                <a class="text-gray-600 hover:text-blue-700" href="moodle.html">Moodle</a>
+                <a class="text-gray-600 hover:text-blue-700" href="https://www.mycamu.co.in/#/home/feed/profile">MyCamu</a>
+                <a class="text-blue-700 font-bold" href="about-us.html">About me</a>
+            </nav>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="md:hidden hidden flex flex-col items-center bg-gray-100 py-4">
+            <a class="text-gray-600 hover:text-blue-700 mb-2" href="index.html">Home</a>
+            <a class="text-gray-600 hover:text-blue-700 mb-2" href="moodle.html">Moodle</a>
+            <a class="text-gray-600 hover:text-blue-700 mb-2" href="https://www.mycamu.co.in/#/home/feed/profile">MyCamu</a>
+            <a class="text-blue-700 font-bold mb-2" href="about-us.html">About me</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-12 px-6 text-center" id="main">
+        <!-- Welcome Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-blue-700 mb-4">Welcome to My Platform</h2>
+            <p class="text-gray-700 mb-8">Connecting you to all the essential links and resources for your academic and personal development.</p>
+        </section>
+        
+        <!-- Social Media Links -->
+        <section class="mt-8">
+            <h3 class="text-2xl font-semibold text-blue-700 mb-6">Connect with Me</h3>
+            <div class="flex justify-center space-x-6 text-2xl text-gray-600">
+                <a href="https://www.linkedin.com/in/nikhil-h-117785326/" target="_blank" class="hover:text-blue-700"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/" target="_blank" class="hover:text-blue-500"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" class="hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/" target="_blank" class="hover:text-gray-900"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript for Toggling the Mobile Menu -->
+    <script>
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>

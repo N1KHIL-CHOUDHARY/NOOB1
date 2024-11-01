@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="about-us.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .profile-card {
+            transition: transform 0.3s ease;
+        }
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-700"><a href="index.html">Noob</a></h1>
+            <nav class="space-x-4">
+                <a class="text-gray-600 hover:text-blue-700" href="index.html">Home</a>
+                <a class="text-gray-600 hover:text-blue-700" href="https://www.mycamu.co.in/#/home/feed/profile">MyCamu</a>
+                <a class="text-gray-600 hover:text-blue-700" href="videopage.html">Contact</a>
+                <a class="text-blue-700 font-bold" href="about-us.html">About me</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto py-12" id="main">
+        <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Meet the Team</h2>
+        
+        <p class="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+           I am Nikhil, and I'm trying to integrate all the links in one place to manage my work easily.
+        </p>
+
+        <!-- Centering the Profile Card -->
+        <div class="flex justify-center">
+            <div class="profile-card bg-white p-6 rounded-lg shadow-lg text-center">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEo88lKGZjwsA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729345430128?e=1734566400&v=beta&t=UUALxNlYN8Cwl6pr2yWLYxdeVwGFgCgTz77NSy36GQY" alt="Member 3" class="w-32 h-32 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Nikhil</h3>
+                <p class="text-gray-600 mb-4">BE CSE I Year</p>
+                <a href="https://www.linkedin.com/in/nikhil-h-117785326/" target="_blank" class="text-blue-600 hover:text-blue-800">
+                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+        
+    </main>
+
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</body>
+</html>
